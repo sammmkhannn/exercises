@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practicing Javascript</title>
+    </head>
+    <body>
+        <script>
+            //working with built in methods
+            //like shift unshif and push
+            let todoList = [2,3,5,4];
+            function rememeber(task) {
+                todoList.push(task);
+            }
+
+            function getTask() {
+                return todoList.shift();
+            }
+
+            function rememberUrgently(task) {
+                todoList.unshift(task);
+            }
+           // the indexOf method
+           document.write(todoList.indexOf(3),"<br>");
+           //the lastIndexOf method
+           document.write(todoList.lastIndexOf(4),"<br>");
+           // the slice method
+           document.write(todoList.slice(2,3));
+           //
+        </script>
+    </body>
+</html>

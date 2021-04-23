@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bad Banking Code</title>
+    </head>
+    <body>
+
+        <script>
+            let accounts = {
+                a:100,
+                b:0,
+                c:10
+            };
+
+            function getAccount() {
+                let accountName = prompt("Enter an Account Number");
+                if(!accounts.hasOwnProperty(accountName)) {
+                    throw new Error (`No such account: ${accountName}`);
+                }
+                return accountName;
+            }
+            function transfer(from , amount) {
+                if(accounts[from] < amount) return ;
+                accounts[from] -= amount;
+                accounts[getAccount()] += amount; 
+            }
+            
+            transfer(accounts.a,10);
+            document.write(accounts.a);
+            document.write(accounts.b);
+        </script>
+    </body>
+</html>

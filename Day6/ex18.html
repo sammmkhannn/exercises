@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            practicing Javascripting
+        </title>
+    </head>
+    <body>
+        <script>
+          //deleting object properties
+          let anObject = {left: 1, right:2};
+          document.write(anObject.left,"<br>");
+          delete anObject.left;
+          document.write(anObject.left,"<br>");
+          document.write("left" in anObject,"<br>");
+          document.write("right" in anObject);
+
+            document.write(Object.keys(anObject));
+        </script>
+    </body>
+</html>

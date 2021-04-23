@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Review</title>
+    </head>
+    <body>
+        <script>
+            let missileSystem = {
+                launch:function(time){document.write("launched")}
+            }
+           //functions as values to the bindings
+           let launchMissiles = function() {
+               missileSystem.launch("now");
+           };
+           launchMissiles();
+        </script>
+    </body>
+</html>

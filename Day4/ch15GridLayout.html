@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Layout</title>
+        <link rel="stylsheet" type="text/css" href="css/960_col.css"/>
+        <style>
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+                color: #665544;
+                text-align: center;
+            }
+            #nav, #feature, .article, #footer{
+                background-color: #efefef;
+                margin-top: 20px;
+                padding: 10px 0px 5px 0px;
+            }
+            #feature, .article{
+                height:100px;
+            }
+            li{
+                display: inline;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="container_12_clearfix">
+           <div id="header" class="grid_12">
+            <h1>Logo</h1>
+            <div id="nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+           </div>
+           <div id="feateture" class="grid_12">
+            <p>Feature</p>
+           </div>
+           <div class="article_grid_4">
+               <p>Column one</p>
+           </div>
+           <div class="articel_grid_4">
+               <p>Column two</p>
+           </div>
+           <div class="aticle_grid_4">
+               <p>Column three</p>
+           </div>
+           <div id="footer" class="grid_12">
+               <p>#copy: Copyright 2011</p>
+           </div>
+       </div> <!--container_12-->
+    </body>
+</html>

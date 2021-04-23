@@ -1,0 +1,23 @@
+
+table{
+    width:600px;
+}
+th,td{
+    padding:7px 10px 10px 10px;
+}
+th{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 90%;
+    border-bottom:2px solid #111111;
+    border-top:1px solid #999;
+}
+tr.even{
+    background-color: #efefef;
+}
+tr:hover{
+    background-color: #c3e6e5;
+}
+.money{
+    text-align: right;
+}

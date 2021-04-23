@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Review</title>
+    </head>
+    <body>
+        <script>
+            //default arguments
+            function power(base, exponent = 2) {
+                let result = 1;
+                for(let i =0; i<exponent; i++) {
+                    result*=base;
+                }
+                return result;
+            }
+            document.write(power(4)+"<br>");
+            document.write(power(4,4));
+        </script>
+    </body>
+</html>

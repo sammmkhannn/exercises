@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Practicing Javascript
+        </title>
+    </head>
+    <body>
+        <script>
+            function range(start,end,step) {
+                let array = [];
+                if(step>0) {
+                    for(let i =start; i<=end; i++) {
+                        array.push(i);
+                        i+=1;
+                    }
+                }
+                else{
+                for(let i =start; i<=end; i++) {
+                    array.push(i);
+                }}
+                return array;
+            }
+
+            function sum(array) {
+                let res = 0;
+                for(let i =0; i<array.length;i++) {
+                    res+=array[i];
+                }
+                return res;
+            }
+
+            let list = range(1,10,2);
+            document.write(list);
+            //let aggregate = sum(list);
+            //document.write(aggregate);
+
+        </script>
+    </body>
+</html>

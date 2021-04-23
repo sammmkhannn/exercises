@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript classes</title>
+    </head>
+    <body>
+        <script>
+            class Rabbit{
+                constructor(type) {
+                    this.type = type;
+                }
+                speak(line) {
+                    document.write(`The ${this.type} Rabbit says ${line}`);
+                }
+            }
+
+            let killerRabbit = new Rabbit("killer");
+            let blackRabbit = new Rabbit("Black");
+            //blackRabbit.speak("I am black");
+            //document.write("<br>");
+            //class expressions
+            //let object = new class {getWord() {return "hello"}};
+            //document.write(object.getWord());
+           // let ages = {
+             //   Boris: 39,
+               // Liang: 22,
+               // Julia: 62
+            //};
+            //document.write(`Julia' is ${ages.Julia}`);
+            //document.write("Is Jack's age known?","Jack" in ages);
+            //document.write("Is toString's age known?","toString" in ages);
+            //Javascript Map Class
+            let ages = new Map();
+            ages.set("Boris",39);
+            ages.set("Liang", 22);
+            ages.set("Julia", 62);
+            document.write(`Julia is ${ages.get("Julia")}<br>`);
+            document.write("Is Jack's age known?",ages.has("Jack"));
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+table{
+    border:2px solid darkblue;
+}
+tr{
+    border:2px solid darkblue;
+}
+td{
+    border:2px solid darkblue;
+}
+#pullquote{
+    text-transform: uppercase;   
+}
+.important{
+    text-transform: uppercase;
+}
+.admittance{
+    color: red;
+}

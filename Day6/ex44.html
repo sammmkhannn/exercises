@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practicing Javascript</title>
+    </head>
+    <body>
+        <script>
+            function unless(test,then) {
+                if(!test)
+                then();
+            }
+            function repeat(n,print) {
+                for (let i =0; i<n; i++) {
+                    print(i);
+                }
+            }
+
+
+            repeat(3,n=>{
+                unless(n%2 ==1, ()=>{
+                    document.write(n, "is even");
+                });
+            });
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Review</title>
+    </head>
+    <body>
+        <script>
+            const hummus = function(factor) {
+                const ingrdient = function (amount, unit, name) {
+                    let ingrdientAmount = amount * factor;
+                    if(ingrdientAmount > 1) {
+                        unit += "s";
+                    }
+                    document.write(`${ingrdientAmount} ${unit} ${name}`+"<br>");
+                    };
+                    ingrdient(1,"can","chickpeas");
+                    ingrdient(0.25,"cup","tahini");
+                    ingrdient(0.25,"cup","limon juice");
+                    ingrdient(1,"clove","garlic");
+                    ingrdient(2,"tablespoon","olive oil");
+                    ingrdient(0.5,"teaspoon","cumin");
+                };
+                hummus(6);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript classes</title>
+    </head>
+    <body>
+        <script>
+            class Rabbit{
+                constructor(type) {
+                    this.type = type;
+                }
+                speak(line) {
+                    document.write(`The ${this.type} Rabbit says ${line}`);
+                }
+            }
+
+            let killerRabbit = new Rabbit("killer");
+            let blackRabbit = new Rabbit("Black"); 
+            //class expressions
+            let object = new class {getWord() {return "hello"}};
+            //overriding Derived Properties
+            Rabbit.prototype.teeth = "small";
+           // document.write(killerRabbit.teeth,"<br>");
+            killerRabbit.teeth = "long, sharp, and bloody";
+            document.write(killerRabbit.teeth,"<br>");
+            document.write(blackRabbit.teeth,"<br>");
+            document.write(Rabbit.prototype.teeth,"<br>");
+
+
+           
+        </script>
+    </body>
+</html>

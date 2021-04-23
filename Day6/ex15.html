@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Review</title>
+    </head>
+    <body>
+        <script>
+           //counting b's
+           function countBs(str,ch) {
+               let bs= 0;
+               for(let i =0 ;i<str.length;i++) {
+                   if(str[i] == ch)
+                    bs++;
+               }
+               return bs;
+           }
+           document.write(countBs("BROWN BROWN BROWN BROWN","B"));
+        </script>
+    </body>
+</html>

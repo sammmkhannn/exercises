@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hover, Active,Focus</title>
+        <style>
+            input{
+                padding:6px 12px 6px 12px;
+                border:1px solid #665544;
+                color:black;
+            }
+            input.submit:hover{
+                background-color: #665544;
+                color:white;
+            }
+            input.submit:active{
+                background-color: chocolate;
+            }
+            input.text{
+                color:#cccccc;
+            }
+            input.text:focus{
+                color:#665544;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <table align="center">
+            <tr>
+                <td><input type="email" name="email" placeholder="Enter Email address" class="text"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit" class="submit"></td>
+            </tr>
+        </table>
+    </body>
+</html>

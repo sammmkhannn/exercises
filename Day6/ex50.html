@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prototypes</title>
+    </head>
+    <body>
+        <script>
+            //prototypes
+
+         let protoRabbit = {
+             speak(line) {
+                 document.write(`The ${this.type} rabbit says '${line}'`);
+             }
+         };
+         let killerRabbit = Object.create(protoRabbit);
+         killerRabbit.type = "killer";
+        killerRabbit.speak("SKREEEEEE!");
+
+        </script>
+    </body>
+</html>

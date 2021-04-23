@@ -1,0 +1,6 @@
+@import url("tables.css");
+@import url("typography.css");
+body{
+    font-family: Arial, Verdana, sans-serif;
+    columns: #111111;
+}

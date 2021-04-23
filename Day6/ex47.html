@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practicing Javascript</title>
+    </head>
+    <body>
+        <script>
+           //methods
+            function speak(line) {
+                document.write(`The ${this.type} Rabbit says ${line}<br>`);
+            }
+          let whiteRabbit = {type:"white", speak};
+          let hungryRabbit = {type:"hungry", speak};
+          whiteRabbit.speak("oh my ears and whiskers," + "  how lat it's getting");
+          hungryRabbit.speak("I could use a carrot right now.");
+          speak.call(hungryRabbit,"Burp!");
+        </script>
+    </body>
+</html>

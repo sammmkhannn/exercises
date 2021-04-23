@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exception Handling</title>
+    </head>
+    <body>
+        <script>
+          class InputError extends Error{}
+          function promptDirection(question) {
+              let result = prompt(question);
+              if(result.toLocaleLowerCase() == "left") return "L";
+              if(result.toLocaleLowerCase() == "right") return "R";
+              throw new InputError("Invalid direction" + result);
+          }
+          console.log(promptDirection("where?"));
+            </script>
+    </body>
+</html>

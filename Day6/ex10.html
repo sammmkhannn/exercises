@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Review</title>
+    </head>
+    <body>
+        <script>
+           //Recursion
+           function power(base, exponent) {
+               if(exponent == 0)
+               return 1;
+               else {
+                   return base * power(base, exponent-1);
+               }
+           }
+
+           document.write(power(2,3));
+        </script>
+    </body>
+</html>

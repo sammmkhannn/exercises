@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Practicing Javascript</title>
+</head>
+<body>
+    
+    <script>
+          let protoRabbit = {
+              speak(line) {
+                  document.write(`The ${type} Rabbit says ${line}`);
+              }
+          };
+        function makeRabbit(type) {
+            let rabbit = Object.create(protoRabbit);
+            rabbit.type = type;
+            return rabbit;
+
+        }
+        
+
+
+    </script>
+</body>

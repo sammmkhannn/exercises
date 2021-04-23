@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Abstraction</title>
+    </head>
+    <body>
+        
+        <script>
+            //abstraction using functions
+            function print(arg) {
+                document.write(arg);
+            }
+            function repeat(n,print) {
+                for (let i =0; i<n; i++) {
+                    print(i);
+                }
+            }
+
+            let labels = [];
+            repeat(5,i => {
+                labels.push(`Unit ${i+1}`);
+            });
+            document.write(labels);
+        </script>
+    </body>
+</html>

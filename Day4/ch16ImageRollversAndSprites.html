@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Rollvers and Sprites</title>
+        <style>
+            a.button{
+                height:36px;
+                background-image:url("images/boats.jpg");
+                background-size: cover;
+                display: inline-block;
+                padding: 10px 20px;
+                text-align:center;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            a#add-to-basket{
+                width:174px;
+                background-position: 0px 0px;
+            }
+            a#framing-options{
+                width:210px;
+                background-position: -175px 0px;
+            }
+            a#add-to-basket:hover {
+                background-position: 0px -40px;}
+            a#framing-options:hover {
+                background-position: -175px -40px;}
+            a#add-to-basket:active {
+                background-position: 0px -80px;}
+            a#framing-options:active {
+                background-position: -175px -80px;}
+        </style>
+    </head>
+    <body>
+        <a href="#ll" class="button" id="add-to-basket">Add to basket</a>
+        <a href="#fff" class="button" id="framing-options">Framing Options</a>
+    </body>
+</html>

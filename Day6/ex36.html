@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practicing Javascript</title>
+    </head>
+    <body>
+        <script>
+            function randomPointOnCircle(radius) {
+                let angle = Math.random() * 2 * Math.PI;
+                return {x: radius * Math.cos(angle),
+                        y: radius * Math.sin(angle)};
+            }
+            let point = (randomPointOnCircle(2));
+            document.write(point.x,point.y);
+        </script>
+    </body>
+</html>

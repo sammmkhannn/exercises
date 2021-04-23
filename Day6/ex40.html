@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practicing Javascript</title>
+    </head>
+    <body>
+        <script>
+            //Function to reverse an array
+            function reverseArray(array) {
+                let newArray = [];
+                for(let i = array.length;i>=0;i--) {
+                    newArray.push(array[i]);
+                }
+                return newArray;
+            }
+            let ra = reverseArray([1,2,3,4,5,6,7]);
+            document.write(ra);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practicing Javascript</title>
+    </head>
+    <body>
+        <script>
+           let journal = [];
+           function addEntry(events, squirrel) {
+               journal.push({events,squirrel});
+           }
+           addEntry(["work","designing","taking a bath","listen to music"],false);
+   //        document.write(journal[0].events);
+           addEntry(["work","touched tree","pizza","running","television"],false);
+           addEntry(["work","ice cream","cauliflower","lasagna","touched tree","brushed teeth"],false);
+           addEntry(["weekend","cycling","break","peanuts","beer"],true);
+
+           function journalEvents (journal) {
+               let events = [];
+               for(let entry of journal) {
+                   for(let event of entry.events) {
+                       if(!events.includes(event)){
+                           events.push(event);
+                       }
+                   }
+
+               }
+               return events;
+           }
+           document.write(journalEvents(journal));
+           let total_events = 0;
+           for(let i = 0; i<journal.length;i++) {
+                total_events += journal[i].events.length;
+           }
+           document.write(total_events);
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Styling Text Inputs</title>
+        <style>
+            input{
+                font-size: 120%;
+                color:#5a5854;
+                background-color: #f2f2f2;
+                border:1px solid #bdbdbd;
+                background-repeat: no-repeat;
+                background-size: 20px;
+                background-position:8px 9px;
+                display:block;
+                margin-bottom: 10px;
+                height: 40px;
+                width:400px;
+                text-align:center;
+            }
+            input:focus{
+                background-color:#ffffff;
+                border:1px solid #b1e1e4;
+            }
+            input#facebook{
+                background-image: url("images/036-facebook.png");
+            }
+            input#twitter{
+                background-image: url("images/008-twitter.png");
+            }
+            input#linkedin{
+                background-image: url("images/027-linkedin.png");
+            }
+            img{
+                height: 10px;
+                widows: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="url" name="facebook" id="facebook"/>
+        <input type="email" name="twitterid" id="twitter" />
+        <input type="url" name="web" id="linkedin"/>
+
+    </body>
+</html>

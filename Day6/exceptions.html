@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Exception Handling</title>
+    </head>
+    <body>
+        <script>
+            function promptNumber(question) {
+    let result = Number(prompt(question));
+    if(Number.isNaN(result) )return null;
+    else return result;
+}
+
+// let result = promptNumber("Enter a number between 1 and 10");
+//wrapping the result in an object
+
+function lastElement(array) {
+    if(array.length == 0) {
+        return {failed: true};
+    } else {
+        return {element: array[array.length-1]};
+    }
+}
+//let names = ['sam', 'alien','ghost'];
+//let element = lastElement(names);
+
+
+//eception handling, raising an exception
+
+function prompDirection(question) {
+    let result = prompt(question);
+    if(result.toLocaleLowerCase() == 'left') return 'L';
+    else if(result.toLocaleLowerCase() == 'right') return 'R';
+    else {
+        throw new Error ("Invalid direction:" + result);
+    }
+}
+ 
+function look() {
+        if(prompDirection("which way?") == 'L') {
+            return " a house";
+        }else {
+            return "tow angry bears";
+        }
+    }
+    
+    try {
+        document.write("You see",look());
+    } catch(error) {
+        document.write("Something went wrong:" +error);
+    }
+ 
+            </script>
+    </body>
+</html>

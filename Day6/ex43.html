@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practicing Javascript</title>
+    </head>
+    <body>
+        <script>
+            function greaterThan(n) {
+                return m => m>n;
+            }
+            //call to the function greaterThan(n)
+            //document.write(greaterThan(10)(11));
+            function noisy(f) {
+                return (...args) => {
+                    document.write("calling with",args);
+                    let result = f(...args);
+                    document.write("called with", args, ",returned result");
+                    return result;
+                };
+            }
+
+            document.write(noisy(Math.min)(2,3));
+
+
+        </script>
+    </body>
+</html>

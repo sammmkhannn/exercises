@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Review</title>
+    </head>
+    <body>
+        <script>
+            //javascript closures
+            function wrapValue(n) {
+                let local = n;
+                return ()=>local;
+            }
+            let wrap1 = wrapValue(1);
+            let wrap2 = wrapValue(2);
+            document.write(wrap1()+"<br>");
+            document.write(wrap2());
+        </script>
+    </body>
+</html>

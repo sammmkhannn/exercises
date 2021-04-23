@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript classes</title>
+    </head>
+    <body>
+        <script>
+            class Rabbit{
+                constructor(type) {
+                    this.type = type;
+                }
+                speak(line) {
+                    document.write(`The ${this.type} Rabbit says ${line}`);
+                }
+            }
+
+            let killerRabbit = new Rabbit("killer");
+            let blackRabbit = new Rabbit("Black");
+            blackRabbit.speak("I am black");
+            document.write("<br>");
+            //class expressions
+            let object = new class {getWord() {return "hello"}};
+            document.write(object.getWord());
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        
+        <script>
+            //this pointer in arrow functions points the scope around it
+            function normalize() {
+                document.write(this.coords.map(n=> n/this.length));
+            }
+            normalize.call({coords:[0,2,3],length:5});
+
+        </script>
+    </body>
+</html>

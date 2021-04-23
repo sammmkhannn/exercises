@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Review</title>
+    </head>
+    <body>
+        <script>
+           //writing function for a purpose
+           function printFarmInventory(cows, chickens) {
+               let cowString = String(cows);
+               while(cowString.length <3) {
+                   cowString ="0" + cowString;
+               }
+               document.write(`${cowString} Cows`);
+               let chickenString = String(chickens);
+               while(chickenString.length<3) {
+                   chickenString ="0" + chickenString;
+               }
+               document.write(`${chickenString} Chickens`);
+           }
+           printFarmInventory(7,11);
+        </script>
+    </body>
+</html>
